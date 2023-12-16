@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      #box1 ,#box2{
+         width : 300px;
+         height: 250px;
+         border: 4px solid green;
+         display: inline-block;
+      }
+         .button{
+            background-color: red;
+            color: antiquewhite;
+         }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <h1>this is heading 1</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisic
+        ing elit. Qui iure, veritatis sapiente voluptates
+         at eos sit, facilis quasi, quod quibusdam porro
+          animi in quas culpa laborum ut magni. Eum, illo
+    </p>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <button onclick="box1()" class="button">click me</button>
+    <button onclick="box2()" class="button">click me</button>
+
+    </div>
+    <Button onclick="hide()" class="button">   X </Button>
+    
+    
+    <script>
+    //      Question: create a button while clicking on it, clear
+    // all the text on document.
+   
+     function hide(){
+       document.querySelector("#div1").innerHTML="";     
+     }
+    //  Question: create a button which convay the style from
+    // one element to another.
+   function box1(){
+      document.getElementById("box1").style.backgroundColor="red";
+    document.getElementById("box2").style.backgroundColor=""
+   }
+   function box2(){
+      document.getElementById("box2").style.backgroundColor="red";
+    document.getElementById("box1").style.backgroundColor=""
+   }
+    </script>
+   <!-- "" -> text/style
+   backgroundColor = ""
+   innerText = ""
+   
+   
+   event -> onclick="" attribute
+   how to use onclick event ?
+   1.   create a function
+   2.   requirements 
+   3.   call a function pass it as a value of onclick="" -->
+</body>
+</html>
